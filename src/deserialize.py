@@ -244,7 +244,7 @@ def parse_Transaction(vds, is_coinbase):
     d = {}
     start = vds.read_cursor
     d['version'] = vds.read_int32()
-	d['nTime'] = vds.read_uint32()
+    d['nTime'] = vds.read_uint32()
     n_vin = vds.read_compact_size()
     d['inputs'] = []
     for i in xrange(n_vin):
